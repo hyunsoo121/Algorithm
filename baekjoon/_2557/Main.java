@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon._2557;
 
 import java.io.*;
 import java.util.*;
@@ -9,7 +9,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        System.out.println("test");
+        bw.write("Hello World!");
 
         bw.flush();
         bw.close();
