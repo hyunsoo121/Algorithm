@@ -1,4 +1,4 @@
-package baekjoon._10869;
+package baekjoon.basic._10869;
 
 import java.io.*;
 import java.util.*;
