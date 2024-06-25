@@ -1,7 +1,7 @@
 package baekjoon.basic._2557;
 
 import java.io.*;
-import java.util.*;
+// import java.util.*;
 
 public class Main {
 
