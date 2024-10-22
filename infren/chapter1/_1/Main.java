@@ -3,8 +3,16 @@ package infren.chapter1._1;
 import java.util.*;
 
 public class Main {
-    public static int soulution(String str, char t){
+    public static int solution(String str, char t){
         int answer = 0;
+
+        String sentence = str.toLowerCase();
+        t = Character.toLowerCase(t);
+        for (int i=0; i<sentence.length(); i++){
+            if (sentence.charAt(i) == t){
+                answer++;
+            }
+        }
 
         return answer;
     }
@@ -16,6 +24,6 @@ public class Main {
 
         char c = sc.next().charAt(0);
 
-        System.out.print(soulution(str, c));
+        System.out.print(solution(str, c));
     }
 }

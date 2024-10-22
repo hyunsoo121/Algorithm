@@ -3,7 +3,7 @@ package infren.chapter1;
 import java.util.Scanner;
 
 public class Template {
-    public static int soulution(){
+    public static int solution(){
         int answer = 0;
 
         return answer;
@@ -13,6 +13,6 @@ public class Template {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print(soulution());
+        System.out.print(solution());
     }
 }
