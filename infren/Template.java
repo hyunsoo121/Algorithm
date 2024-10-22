@@ -1,4 +1,4 @@
-package infren.chapter1;
+package infren;
 
 import java.util.Scanner;
 
