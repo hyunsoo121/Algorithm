@@ -5,13 +5,29 @@ import java.util.Scanner;
 public class Main {
     public static String solution(String s) {
 
-        int start = 0, end = s.length()-1;
+
 
         char[] arr = s.toCharArray();
 
-        for (;start >= end; ){
+        System.out.println(arr[14]);
+
+        for (int start = 0, end = arr.length-1; start >= end; ){
+            if (Character.isAlphabetic(arr[start]) && Character.isAlphabetic(arr[end])){
+                System.out.println("1");
+                if (!(arr[start] == arr[end])){
+                    return "NO";
+                }
+            }
+            else if (!Character.isAlphabetic(arr[start]))
+                start++;
+            else if (!Character.isAlphabetic(arr[end]))
+                end++;
+
+            start++;
+            end++;
 
         }
+
         return "YES";
     }
 
