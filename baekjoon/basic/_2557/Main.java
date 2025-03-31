@@ -6,8 +6,8 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         bw.write("Hello World!"); // 괄호안의 값 출력
 
