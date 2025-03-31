@@ -13,14 +13,14 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         
-        st = new StringTokenizer(br.readLine());
+        st = new StringTokenizer(br.readLine()); // 줄 바꿈 이후 다시 입력받음
+
         for(int i=0; i<a; i++){
             int c = Integer.parseInt(st.nextToken());
             if (c<b)
                 bw.write(String.valueOf(c) + " ");
         }
 
-        bw.flush();
         bw.close();
         br.close();
 

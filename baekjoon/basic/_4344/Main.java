@@ -15,6 +15,7 @@ public class Main {
         for (int i=0; i<a; i++){
             st = new StringTokenizer(br.readLine());
             int n = Integer.parseInt(st.nextToken());
+
             ArrayList<Integer> array = new ArrayList<>();
             int avg = 0;
             for (int j=0; j<n; j++){
@@ -33,7 +34,6 @@ public class Main {
             bw.newLine();
         }
         br.close();
-        bw.flush();
         bw.close();
     }    
 }

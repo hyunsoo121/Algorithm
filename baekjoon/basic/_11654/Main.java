@@ -14,7 +14,6 @@ public class Main {
         bw.write(String.valueOf((int) c.charAt(0)));
 
         br.close();
-        bw.flush();
         bw.close();
 
     }

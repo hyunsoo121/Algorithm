@@ -22,10 +22,9 @@ public class Main {
                     count = 0;
             }
             bw.write(String.valueOf(score));
-            bw.newLine();
+            bw.newLine(); // 줄바꿈
         }
 
-        bw.flush();
         bw.close();
         br.close();
 
