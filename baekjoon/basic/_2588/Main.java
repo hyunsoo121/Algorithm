@@ -12,9 +12,9 @@ public class Main {
         int a = Integer.parseInt(br.readLine());
         int b = Integer.parseInt(br.readLine());
 
-        int c = a * (b % 10);
-        int d = a * ((b % 100) / 10);
-        int e = a * (b / 100);
+        int c = a * (b % 10); // 1의 자리
+        int d = a * ((b % 100) / 10); // 10의 자리
+        int e = a * (b / 100); // 100의자리
 
         bw.write(String.valueOf(c));
         bw.newLine();
@@ -22,9 +22,8 @@ public class Main {
         bw.newLine();
         bw.write(String.valueOf(e));
         bw.newLine();
-        bw.write(String.valueOf(c + (d * 10) + (e * 100)));
+        bw.write(String.valueOf(c + (d * 10) + (e * 100))); // 결과값
 
-        bw.flush();
         bw.close();
         br.close();
 
