@@ -20,8 +20,7 @@ public class Main {
             count++;
         count++;
         bw.write(String.valueOf(count));
-        
-        bw.flush();
+
         bw.close();
         br.close();
      }

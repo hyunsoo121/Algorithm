@@ -36,7 +36,6 @@ public class Main {
 
         bw.write(String.valueOf(N - count));
 
-        bw.flush();
         bw.close();
         br.close();
         

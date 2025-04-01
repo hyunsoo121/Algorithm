@@ -16,7 +16,6 @@ public class Main {
 
         bw.write(String.valueOf(factorial(N)));
 
-        bw.flush();
         bw.close();
         br.close();
     }
