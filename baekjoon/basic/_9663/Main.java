@@ -27,7 +27,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++){
             boolean legal = true;
             for (int j = 0; j < n; j++){
-                if (arr[j] == i || arr[j] == i + n - j || arr[j] == i - n + j) { // arr[j] = i -> j번째 행 i번째 열에 위치함을 의미
+                if (arr[j] == i || arr[j] == i + (n - j) || arr[j] == i - (n - j)) { // arr[j] = i -> j번째 행 i번째 열에 위치함을 의미
                     legal = false;
                     break;
                 }

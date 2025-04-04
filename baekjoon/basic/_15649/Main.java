@@ -17,6 +17,10 @@ public class Main {
         arr = new int[m];
         visit = new boolean[n];
 
+        for (boolean i : visit) {
+            System.out.println(i);
+        }
+
         backTracking(0);
 
         br.close();
