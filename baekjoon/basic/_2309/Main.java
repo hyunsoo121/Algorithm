@@ -4,43 +4,37 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static int[] arr = new int[9];
-    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        int sum = 0;
+        for (int i = 0; i < 9; i++) {
+            arr.add(Integer.valueOf(br.readLine()));
+            sum += arr.get(i);
+        }
+
+        Collections.sort(arr);
 
         for (int i = 0; i < 9; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
-        }
+            for (int j = i; j < 9; j++) {
+                if (sum - arr.get(i) - arr.get(j) == 100){
 
-        int[] result = new int[7];
-        combination(0, 0, result);
+                    for (int k = 0; k < arr.size(); k++) {
+                        if (k != i && k != j)
+                            bw.write(arr.get(k) + "\n");
+                    }
 
-        br.close();
-        bw.close();
-    }
+                    bw.flush();
+                    bw.close();
+                    br.close();
 
-    static void combination(int count, int start, int[] result) throws IOException{
-        if (count == 7) {
-            int sum = 0;
-            for (int i : result)
-                sum += i;
-
-            if (sum == 100) {
-                Arrays.sort(result);
-                for (int i : result)
-                    bw.write(i + "\n");
-                bw.flush();
-                System.exit(0);
+                    return;
+                }
             }
-            return;
-        }
-
-        for (int i = start; i < 9; i++) {
-            result[count] = arr[i];
-            combination(count + 1, i + 1, result);
         }
     }
+
 }
