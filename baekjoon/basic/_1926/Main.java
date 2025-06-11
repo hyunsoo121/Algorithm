@@ -34,8 +34,6 @@ public class Main {
             }
         }
 
-        bfs(0,0, arr, visited);
-
         bw.write(n + "\n" + max);
 
         br.close();
